@@ -44,9 +44,11 @@ body {
     line-height: 1.6;
 }
 
+/*need to get header image to stretch all the way across the screen at all sizes*/
 .logo {
     
 }
+/*---*/
 
 section {
     padding: 5em 2em;
@@ -57,6 +59,31 @@ img{
     max-width: 100%;
 }
 
+:focus {
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 3px;
+}
+
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: .5em 1.5em;
+    margin: auto;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
 
 /* Typography */
 
@@ -161,6 +188,11 @@ h3 {font-size: var(--fs-h3);}
     margin: 0.5em auto 1em;
     background: currentColor;
     opacity: 0.5;
+}
+
+.about {
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 @media (min-width: 800px) {
